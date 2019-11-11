@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+	
+<tiles-definitions>
+	<definition name="mytemplate" 
+		template="/WEB-INF/views/admin_template.jsp">
+		<put-attribute name="content" value=""></put-attribute>
+	</definition>
+	
+	<definition name="user" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/user.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="useradded" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/useradded.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="useradd" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/useradd.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="updateform" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/userupdateform.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="userupdated" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/userupdated.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="userdeleted" extends="mytemplate">
+		<put-attribute name="content" value="/WEB-INF/views/userdeleted.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="asset" extends="mytemplate">
+		<put-attribute name="content"
+			value="/WEB-INF/views/asset.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="assetaddform" extends="mytemplate">
+		<put-attribute name="content"
+			value="/WEB-INF/views/assetaddform.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="assetaddsuccess" extends="mytemplate">
+		<put-attribute name="content"
+			value="/WEB-INF/views/assetaddsuccess.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="asseteditform" extends="mytemplate">
+		<put-attribute name="content"
+			value="/WEB-INF/views/asseteditform.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="assetupdatesuccess" extends="mytemplate">
+		<put-attribute name="content"
+			value="/WEB-INF/views/assetupdatesuccess.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="assetdeletesuccess" extends="mytemplate">
+		<put-attribute name="content"
+			value="/WEB-INF/views/assetdeletesuccess.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>
